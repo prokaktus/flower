@@ -19,6 +19,9 @@ from flower import command  # side effect - define options
 
 
 def app_delay(method, *args, **kwargs):
+    """
+    Nothing.
+    """
     future = Future()
     future.set_result(method(*args, **kwargs))
     return future
